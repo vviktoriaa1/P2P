@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+bool isPifagor(int a, int b, int c) {
+    return (a*a + b*b == c*c);
+}
+
+int main() {
+    int a, b, c;
+    
+    cout << "Введите первое число: ";
+    cin >> a;
+    
+    cout << "Введите второе число: ";
+    cin >> b;
+    
+    cout << "Введите третье число: ";
+    cin >> c;
+    
+    if (isPifagor(a, b, c)) {
+        cout << "Все числа являются числами Пифагора." << std::endl;
+    } else {
+        cout << "Не все числа являются числами Пифагора." << std::endl;
+    }
+    
+    return 0;
+}
+
