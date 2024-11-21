@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main(){
+	float s, r, k;
+	int n;
+	k=0;
+	cout<<"Введите количество учащихся: ";
+	cin>>n;
+	while(n!=0){
+		cout <<"Введите рост:";
+		cin>>r;
+		k+=r;
+		n-=1;
+	}
+	s=k/n;
+	cout<<"Средний рост учащихся: ";
+	cout<<s; 
+	return 0;
+}
