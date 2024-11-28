@@ -1,0 +1,8 @@
+k=int(input("Введите число:"))
+n=int(input("Введите натуральный показатель:"))
+i=1
+while True:
+  if i==0:
+    break
+  print(k**n)
+  i-=1
