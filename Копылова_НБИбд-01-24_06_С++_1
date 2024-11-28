@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main() 
+{
+  int k=1;
+  int s=0;
+  do
+  {
+    s+=k;
+    ++k;
+  }
+  while (k<101);
+  cout<<s;
+  return 0;
+}
