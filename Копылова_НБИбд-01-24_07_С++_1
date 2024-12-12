@@ -1,0 +1,25 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+int main(){
+    int n, d;
+    vector <int> a;
+    cout<<"Введите количество элементов массива:";
+    cin>>n;
+    for(int i=0; i<n; ++i){
+        int s;
+        cout<<"Введите число:";
+        cin>>s;
+        a.push_back(s);
+    }
+    cout<<"Введите дополнительное число:";
+    cin>>d;
+    a.push_back(d);
+    sort(a.begin(), a.end());
+    cout<<"Отсортированный список:";
+    for (int k : a){
+        cout<<k;
+    }
+    return 0;
+}
