@@ -1,0 +1,14 @@
+n=int(input())
+m=int(input())
+a=[[0]*m for i  in range(n)]
+for x in range(n):
+    for y in range(m):
+        h=int(input())
+        a[x][y]=h
+b=max(max(a))
+s=0
+for i in range(n):
+    for j in range(m):
+        if (a[i][j]==b):
+            s+=1
+print(s)
