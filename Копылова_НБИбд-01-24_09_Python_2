@@ -1,0 +1,12 @@
+import math
+def calculate_cylinder_surface_area(d, h):
+	radius=d/2
+	b = math.pi *radius ** 2
+	perimeter = 2 * math.pi * radius
+	s = perimeter * h
+	t= b+s
+	return t
+d = float (input ("Введите диаметр основания цилиндра: "))
+h = float (input ("Введите высоту цилиндра: "))
+result=calculate_cylinder_surface_area(d, h)
+print("Площадь поверхности цилиндра равна", result)
